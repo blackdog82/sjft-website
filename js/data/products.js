@@ -1,10 +1,13 @@
 /* js/data/products.js — 제품 데이터 */
 var PRODUCTS = [
+
+  /* ===== 백필터 ===== */
   {
     id: 'bf-pulse-01',
-    category: 'housing',
-    categoryLabel: '백필터 하우징',
+    category: 'bagfilter',
+    categoryLabel: '백필터',
     name: '펄스 제트 백필터 (Pulse Jet Bag Filter)',
+    image: 'images/products/bf-pulse.jpg',
     icon: '🔧',
     summary: '압축공기 역기류 탈진 방식. 운전 중 연속 탈진 가능하여 가동 중단 불필요.',
     specs: {
@@ -19,9 +22,10 @@ var PRODUCTS = [
   },
   {
     id: 'bf-shaker-01',
-    category: 'housing',
-    categoryLabel: '백필터 하우징',
+    category: 'bagfilter',
+    categoryLabel: '백필터',
     name: '쉐이커 백필터 (Shaker Bag Filter)',
+    image: 'images/products/bf-shaker.jpg',
     icon: '🔩',
     summary: '기계적 진동으로 필터백 탈진. 소용량·저농도 분진에 적합한 경제적 솔루션.',
     specs: {
@@ -36,9 +40,10 @@ var PRODUCTS = [
   },
   {
     id: 'bf-reverse-01',
-    category: 'housing',
-    categoryLabel: '백필터 하우징',
+    category: 'bagfilter',
+    categoryLabel: '백필터',
     name: '역기류 백필터 (Reverse Air Bag Filter)',
+    image: 'images/products/bf-reverse.jpg',
     icon: '🏭',
     summary: '역방향 공기로 탈진. 필터백 손상 최소화, 고온·대용량 집진에 최적.',
     specs: {
@@ -51,28 +56,144 @@ var PRODUCTS = [
     },
     industries: ['발전', '시멘트', '철강', '화학']
   },
+
+  /* ===== 카트리지필터 ===== */
   {
-    id: 'bag-poly-01',
-    category: 'bag',
-    categoryLabel: '필터백',
-    name: '폴리에스터 필터백 (Polyester Felt Bag)',
+    id: 'cf-pleated-01',
+    category: 'cartridge',
+    categoryLabel: '카트리지필터',
+    name: '산업용 플리티드 카트리지 필터',
+    image: 'images/products/cf-pleated.jpg',
+    icon: '🌀',
+    summary: '주름형 여과재로 넓은 여과 면적 확보. 교체 주기 길고 압력 손실 낮음.',
+    specs: {
+      '여과 정도': '1 ~ 100 μm',
+      '최고 사용 온도': '120°C',
+      '재질': 'Polyester, Cellulose, Spunbond',
+      '규격': '직경 130~325mm, 길이 500~2,000mm (주문 제작)',
+      '표면 처리': '발수·내유·PTFE 코팅 가능',
+      '용도': '분체 집진, 도장 부스, 용접 흄 제거'
+    },
+    industries: ['금속', '화학', '도장', '식품', '제약']
+  },
+  {
+    id: 'cf-ptfe-01',
+    category: 'cartridge',
+    categoryLabel: '카트리지필터',
+    name: 'PTFE 카트리지 필터',
+    image: 'images/products/cf-ptfe.jpg',
+    icon: '⚗️',
+    summary: '내화학성·내열성 최강. 산·알칼리·용제 환경에서도 안정적인 여과 성능.',
+    specs: {
+      '여과 정도': '0.5 ~ 10 μm',
+      '최고 사용 온도': '260°C (연속)',
+      '재질': 'PTFE Membrane + PTFE 기포',
+      '내화학성': '산·알칼리·용제 탁월한 내구성',
+      '규격': '주문 제작',
+      '용도': '화학 공장, 반도체, 소각로'
+    },
+    industries: ['화학', '반도체', '제약', '소각']
+  },
+  {
+    id: 'cf-nano-01',
+    category: 'cartridge',
+    categoryLabel: '카트리지필터',
+    name: '나노섬유 카트리지 필터',
+    image: 'images/products/cf-nano.jpg',
+    icon: '🔬',
+    summary: '나노 섬유층으로 서브미크론 분진까지 포집. 에너지 절감·장수명 설계.',
+    specs: {
+      '여과 정도': '0.1 ~ 1 μm',
+      '포집 효율': '99.97% 이상 (H14 등급)',
+      '재질': 'Nanofiber + Polyester 기포',
+      '압력 손실': '기존 대비 30~40% 저감',
+      '규격': '주문 제작',
+      '용도': '정밀 분진 제어, 제약·반도체 클린룸 전처리'
+    },
+    industries: ['반도체', '제약', '식품', '화학']
+  },
+
+  /* ===== 수처리필터 ===== */
+  {
+    id: 'wf-strainer-01',
+    category: 'water',
+    categoryLabel: '수처리필터',
+    name: '산업용 스트레이너 필터',
+    image: 'images/products/wf-strainer.jpg',
+    icon: '💧',
+    summary: '배관 내 이물질 제거용 1차 필터. Y형·T형·바스켓형 선택 가능.',
+    specs: {
+      '여과 정도': '50 ~ 3,000 μm',
+      '사용 압력': '최대 16 bar',
+      '재질': 'SUS304, SUS316L, Carbon Steel',
+      '연결 방식': '플랜지형, 나사형',
+      '세척 방식': '수동 역세척, 자동 역세척(옵션)',
+      '용도': '냉각수, 공업용수, 원수 전처리'
+    },
+    industries: ['화학', '발전', '철강', '식품', '제약']
+  },
+  {
+    id: 'wf-membrane-01',
+    category: 'water',
+    categoryLabel: '수처리필터',
+    name: '정밀여과 멤브레인 필터',
+    image: 'images/products/wf-membrane.jpg',
+    icon: '🌊',
+    summary: '0.1~0.45μm 정밀 여과. 박테리아·미립자 완전 제거, 공업용수 청정화.',
+    specs: {
+      '여과 정도': '0.1 ~ 0.45 μm',
+      '재질': 'PP, PVDF, PTFE',
+      '최고 사용 온도': '80°C (PP), 140°C (PTFE)',
+      '규격': '10", 20", 30", 40" (주문 제작)',
+      '연결': '222, 226, DOE',
+      '용도': '공업용수 정제, 식품·제약 공정수'
+    },
+    industries: ['제약', '식품', '반도체', '화학']
+  },
+  {
+    id: 'wf-bag-01',
+    category: 'water',
+    categoryLabel: '수처리필터',
+    name: '액체용 필터백 (Liquid Filter Bag)',
+    image: 'images/products/wf-bag.jpg',
+    icon: '🫧',
+    summary: '액체 배관 내 이물질·슬러지 제거. 대유량 처리에 경제적인 백 필터.',
+    specs: {
+      '여과 정도': '1 ~ 200 μm',
+      '재질': 'PE, PP, Nylon, PTFE',
+      '최고 사용 온도': '140°C',
+      '규격': '#1, #2, #3, #4 (주문 제작)',
+      '처리 유량': '최대 500 m³/hr (하우징 사양별)',
+      '용도': '도료·코팅액, 오일, 냉각수, 폐수 전처리'
+    },
+    industries: ['화학', '도장', '식품', '철강', '제지']
+  },
+
+  /* ===== 집진기 부품 ===== */
+  {
+    id: 'parts-bag-poly-01',
+    category: 'parts',
+    categoryLabel: '집진기 부품',
+    name: '폴리에스터 필터백',
+    image: 'images/products/parts-bag-poly.jpg',
     icon: '🧵',
-    summary: '가장 범용적인 필터백. 내산성·내알칼리성 우수. 경제적 비용으로 안정적 성능.',
+    summary: '가장 범용적인 필터백. 내산성·내알칼리성 우수, 경제적 비용으로 안정적 성능.',
     specs: {
       '재질': 'Polyester Felt',
       '최고 사용 온도': '130°C (연속), 150°C (순간)',
       '포집 효율': '99.5% 이상',
       '표면 처리': '소결(Singeing), 캘린더링(Calendering) 가능',
       '규격': '직경 120~160mm, 길이 2~6m (주문 제작)',
-      '용도': '일반 산업 집진 (목재, 식품, 일반 분진)'
+      '생산': '외주 없이 자체 생산'
     },
-    industries: ['식품', '목재', '금속', '일반 제조', '시멘트']
+    industries: ['식품', '목재', '금속', '일반 제조']
   },
   {
-    id: 'bag-ptfe-01',
-    category: 'bag',
-    categoryLabel: '필터백',
-    name: 'PTFE 나노섬유 필터백',
+    id: 'parts-bag-ptfe-01',
+    category: 'parts',
+    categoryLabel: '집진기 부품',
+    name: 'PTFE 필터백',
+    image: 'images/products/parts-bag-ptfe.jpg',
     icon: '⚙️',
     summary: '고온·고습·부식성 가스 환경 최적화. 포집 효율 99.99% 이상의 프리미엄 필터백.',
     specs: {
@@ -81,15 +202,16 @@ var PRODUCTS = [
       '포집 효율': '99.99% 이상',
       '내화학성': '산·알칼리·용제 탁월한 내구성',
       '규격': '직경 120~160mm, 길이 2~6m (주문 제작)',
-      '용도': '화학 공장, 소각로, 반도체 제조'
+      '생산': '외주 없이 자체 생산'
     },
     industries: ['화학', '발전', '제약', '반도체', '소각']
   },
   {
-    id: 'bag-nomex-01',
-    category: 'bag',
-    categoryLabel: '필터백',
-    name: '노멕스 필터백 (Nomex/Aramid Bag)',
+    id: 'parts-bag-nomex-01',
+    category: 'parts',
+    categoryLabel: '집진기 부품',
+    name: '노멕스 필터백',
+    image: 'images/products/parts-bag-nomex.jpg',
     icon: '🔥',
     summary: '200°C 이상 고온 연속 운전 가능. 철강·시멘트 킬른 등 혹독한 환경에 특화.',
     specs: {
@@ -98,15 +220,34 @@ var PRODUCTS = [
       '포집 효율': '99.5% 이상',
       '내열성': '탁월한 고온 치수 안정성',
       '규격': '직경 120~160mm, 길이 2~6m (주문 제작)',
-      '용도': '시멘트 킬른, 용광로, 드라이어'
+      '생산': '외주 없이 자체 생산'
     },
     industries: ['시멘트', '철강', '유리', '도자기']
   },
   {
-    id: 'cage-01',
-    category: 'cage',
-    categoryLabel: '케이지',
+    id: 'parts-mesh-01',
+    category: 'parts',
+    categoryLabel: '집진기 부품',
+    name: '메쉬망 150 필터',
+    image: 'images/products/parts-mesh.jpg',
+    icon: '🕸️',
+    summary: '자체 생산 라인에서 직접 제작. 약 100μm 미세 입자까지 여과 가능.',
+    specs: {
+      '메쉬 규격': '150 Mesh (약 100μm 여과)',
+      '소재': '폴리에스터 모노필라멘트',
+      '특징': '세척 후 반복 사용 가능, 균일한 직조 구조',
+      '생산 방식': '외주 없이 자체 생산',
+      '커스텀': '규격 맞춤 제작 가능',
+      '용도': '식품·화학·도료·집진 전처리·분체 공정'
+    },
+    industries: ['식품', '화학', '도료', '분체', '제약']
+  },
+  {
+    id: 'parts-cage-01',
+    category: 'parts',
+    categoryLabel: '집진기 부품',
     name: '필터 케이지 (Filter Cage)',
+    image: 'images/products/parts-cage.jpg',
     icon: '🗂️',
     summary: '필터백 형태 유지를 위한 금속 지지대. 스파이럴 및 용접형 선택 가능.',
     specs: {
@@ -116,47 +257,14 @@ var PRODUCTS = [
       '규격': '직경 115~155mm, 길이 2~6m (주문 제작)',
       '특징': '내식성 강화 코팅 옵션 가능'
     },
-    industries: ['철강', '시멘트', '화학', '발전', '식품']
-  },
-  {
-    id: 'system-01',
-    category: 'system',
-    categoryLabel: '집진 시스템',
-    name: '집진 시스템 일체형 (Turnkey)',
-    icon: '🏗️',
-    summary: '백필터 하우징+팬+덕트+후드+제어반 포함 턴키 공급. 설계부터 시운전까지 일괄.',
-    specs: {
-      '구성': '백필터 본체 + 집진 팬 + 덕트 + 후드 + 제어반',
-      '처리 풍량': '1,000 ~ 100,000 m³/hr',
-      '제어 방식': 'PLC 자동 제어 (차압 연동)',
-      '설치 지원': '현장 설치·시운전 포함',
-      '납기': '설계 완료 후 8~12주',
-      '보증': '1년 품질 보증'
-    },
-    industries: ['철강', '시멘트', '화학', '발전', '식품', '제지']
-  },
-  {
-    id: 'mesh-150-01',
-    category: 'mesh',
-    categoryLabel: '메쉬망 필터',
-    name: '메쉬망 150 필터 (Mesh Filter 150)',
-    icon: '🕸️',
-    summary: '자체 생산 라인에서 직접 제작. 폴리에스터 모노필라멘트 원사 사용, 약 100㎛ 미세 입자까지 여과 가능.',
-    specs: {
-      '메쉬 규격': '150 Mesh (약 100㎛ 여과)',
-      '소재': '폴리에스터 모노필라멘트 (Polyester Monofilament)',
-      '특징': '세척 후 반복 사용 가능, 균일한 직조 구조',
-      '생산 방식': '외주 없이 자체 생산 (소재~봉제 마감 직접 품질 관리)',
-      '커스텀': '규격 맞춤 제작 가능',
-      '용도': '식품·화학·도료·집진 전처리·분체 공정'
-    },
-    industries: ['식품', '화학', '도료', '분체', '제약']
+    industries: ['철강', '시멘트', '화학', '발전']
   },
   {
     id: 'parts-valve-01',
     category: 'parts',
-    categoryLabel: 'A/S 부품',
+    categoryLabel: '집진기 부품',
     name: '솔레노이드 밸브 & 다이어프램',
+    image: 'images/products/parts-valve.jpg',
     icon: '🔌',
     summary: '펄스 제트 방식 탈진에 사용되는 핵심 소모품. 주요 메이커 호환 재고 보유.',
     specs: {
@@ -172,14 +280,15 @@ var PRODUCTS = [
   {
     id: 'parts-manometer-01',
     category: 'parts',
-    categoryLabel: 'A/S 부품',
+    categoryLabel: '집진기 부품',
     name: '마노미터 & 차압계',
+    image: 'images/products/parts-manometer.jpg',
     icon: '📊',
     summary: '백필터 차압 모니터링용 압력계. 아날로그·디지털 모델 보유.',
     specs: {
       '측정 범위': '0~500 mmAq (아날로그), 디지털 맞춤',
       '연결부': '1/8인치, 1/4인치 NPT',
-      '재질': ' Aluminum + ABS',
+      '재질': 'Aluminum + ABS',
       '정확도': '±2% FS',
       '재고': '상시 보유',
       '출고': '주문 다음 날 출고'

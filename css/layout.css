@@ -9,7 +9,7 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(26, 58, 92, 0.97);
+  background: rgba(27, 67, 50, 0.97);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   transition: box-shadow var(--transition);

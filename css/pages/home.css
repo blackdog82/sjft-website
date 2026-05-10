@@ -157,6 +157,28 @@
 @media (max-width: 959px) { .product-cards { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 599px) { .product-cards { grid-template-columns: 1fr; } }
 
+/* ---- Why Us ---- */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.why-card {
+  background: var(--color-surface);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 32px 24px;
+  border-top: 4px solid var(--color-accent);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.why-card:hover { box-shadow: var(--card-shadow-h); transform: translateY(-3px); }
+.why-icon { font-size: 2.2rem; margin-bottom: 16px; }
+.why-card h3 { font-size: 1rem; font-weight: 700; color: var(--color-primary); margin-bottom: 12px; }
+.why-card p { font-size: 0.85rem; color: var(--color-text-sub); line-height: 1.75; }
+
+@media (max-width: 959px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 599px) { .why-grid { grid-template-columns: 1fr; } }
+
 /* ---- Manufacturing Process ---- */
 .process-steps {
   display: grid;
@@ -260,7 +282,7 @@
 
 /* ---- CTA Banner ---- */
 .cta-banner {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #0e2d50 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0f2d1e 100%);
   padding: 64px 0;
   text-align: center;
   color: #fff;
