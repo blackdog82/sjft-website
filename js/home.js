@@ -1,5 +1,31 @@
-/* home.js — 카운터 애니메이션, 스크롤 reveal */
+/* home.js — 카운터 애니메이션, 스크롤 reveal, 히어로 파티클 */
 (function () {
+  // 히어로 파티클 생성
+  var container = document.getElementById('heroParticles');
+  if (container) {
+    var count = 22;
+    for (var i = 0; i < count; i++) {
+      var p = document.createElement('span');
+      p.className = 'hero-particle';
+      var size = Math.random() * 5 + 2;          // 2~7px
+      var left = Math.random() * 100;             // 0~100%
+      var delay = Math.random() * 14;             // 0~14s 랜덤 시작
+      var duration = Math.random() * 10 + 10;    // 10~20s 부유 시간
+      var opacity = Math.random() * 0.4 + 0.2;   // 0.2~0.6
+      p.style.cssText =
+        'width:' + size + 'px;' +
+        'height:' + size + 'px;' +
+        'left:' + left + '%;' +
+        'bottom:0;' +
+        'opacity:0;' +
+        'background:rgba(255,255,255,' + opacity + ');' +
+        'animation-duration:' + duration + 's;' +
+        'animation-delay:' + delay + 's;';
+      container.appendChild(p);
+    }
+  }
+
+
   // IntersectionObserver: .reveal 요소 등장 애니메이션
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
