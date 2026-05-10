@@ -1,0 +1,28 @@
+/* js/data/portfolio.js — 납품 실적 데이터 */
+var PORTFOLIO = [
+  { id: 'p001', year: 2024, client: '○○제철 포항 2공장', industry: '철강', product: '펄스 제트 백필터 6기 (30,000 m³/hr)', achievement: '분진 포집 효율 99.9% 달성, 배출 기준 대비 85% 저감' },
+  { id: 'p002', year: 2024, client: '△△시멘트 단양 공장', industry: '시멘트', product: '역기류 백필터 2기 (80,000 m³/hr)', achievement: '킬른 집진 시스템 교체, 법적 기준 50% 이하 배출 달성' },
+  { id: 'p003', year: 2024, client: '□□화학 울산 공장', industry: '화학', product: 'PTFE 필터백 교체 (1,200매)', achievement: '내화학성 강화로 필터 수명 기존 대비 2.5배 연장' },
+  { id: 'p004', year: 2023, client: '○○발전 보령 화력', industry: '발전', product: '대형 역기류 백필터 설비 보수 (150,000 m³/hr)', achievement: '설비 노후화 개선, 연간 유지보수 비용 30% 절감' },
+  { id: 'p005', year: 2023, client: '△△제지 안동 공장', industry: '제지', product: '펄스 제트 집진 시스템 신설 (15,000 m³/hr)', achievement: '신규 라인 집진 설비 일괄 납품·시공' },
+  { id: 'p006', year: 2023, client: '□□금속 인천 공장', industry: '금속', product: '용접 흄 집진기 4기 (2,000 m³/hr × 4)', achievement: '작업자 분진 노출 농도 허용 기준의 1/10 달성' },
+  { id: 'p007', year: 2023, client: '○○식품 음성 공장', industry: '식품', product: '분체 회수용 백필터 시스템 (5,000 m³/hr)', achievement: '제품 회수율 99.5% 달성, 폐기물 제로화' },
+  { id: 'p008', year: 2022, client: '△△철강 광양 제3고로', industry: '철강', product: '전기로 집진 백필터 일괄 교체', achievement: '가동 중단 없이 Hot Swap 방식으로 교체 완료' },
+  { id: 'p009', year: 2022, client: '□□시멘트 영월 공장', industry: '시멘트', product: '냉각기 집진 필터백 교체 (800매)', achievement: '교체 후 집진 효율 99.8% 복원, 조기 폐기 방지' },
+  { id: 'p010', year: 2022, client: '○○화학 여수 공장', industry: '화학', product: '고온 집진 시스템 신설 (260°C 운전)', achievement: 'PTFE 필터 적용으로 부식성 가스 처리 문제 해결' },
+  { id: 'p011', year: 2022, client: '△△발전 당진 2호기', industry: '발전', product: '백필터 하우징 부분 교체 및 필터백 전량 교체', achievement: '환경부 정기 검사 기준치 이하 달성' },
+  { id: 'p012', year: 2021, client: '□□목재 대구 공장', industry: '기타', product: '쉐이커 백필터 신설 (3,000 m³/hr)', achievement: '목분 분진 포집, 화재 위험 감소 및 작업 환경 개선' },
+  { id: 'p013', year: 2021, client: '○○제약 오송 공장', industry: '화학', product: 'PTFE 필터백 특주 제작 납품 (클린룸 적용)', achievement: '의약품 제조 GMP 기준 충족, 분진 0.3μm 이상 99.99% 포집' },
+  { id: 'p014', year: 2021, client: '△△시멘트 삼척 공장', industry: '시멘트', product: '분쇄기 집진 설비 턴키 납품 (20,000 m³/hr)', achievement: '설계부터 시운전까지 12주 완료, 즉시 법적 기준 충족' },
+  { id: 'p015', year: 2020, client: '□□철강 포항 1공장', industry: '철강', product: '소결기 집진 필터 전량 교체 (2,000매)', achievement: '내열 노멕스 필터 적용, 교체 주기 1년→2년 연장' },
+  { id: 'p016', year: 2020, client: '○○발전 태안 화력', industry: '발전', product: '탈황 설비 후단 집진 시스템 보수', achievement: '황산 가스 환경에 PTFE 필터 적용, 내구성 3배 향상' },
+  { id: 'p017', year: 2019, client: '△△유리 군산 공장', industry: '기타', product: '유리 원료 분진 집진 백필터 신설 (8,000 m³/hr)', achievement: '고온(200°C) 환경 안정 가동, 법적 기준 이하 유지' },
+  { id: 'p018', year: 2019, client: '□□화학 대산 공장', industry: '화학', product: '반응기 가스 집진 시스템 납품', achievement: '유해 화학물질 비산 방지, 작업 환경 안전 확보' },
+  { id: 'p019', year: 2018, client: '○○시멘트 동해 공장', industry: '시멘트', product: '역기류 백필터 대형 2기 (60,000 m³/hr × 2)', achievement: '설비 노후화로 인한 환경 위반 해소, 기준치 내 배출 안정화' },
+  { id: 'p020', year: 2018, client: '△△제지 청주 공장', industry: '제지', product: '보일러 연소 가스 집진 시스템', achievement: '바이오매스 보일러 연소 가스 법적 기준 70% 이하 달성' },
+  { id: 'p021', year: 2017, client: '□□금속 부산 공장', industry: '금속', product: '주조 공정 집진 설비 일체형 납품', achievement: '주물사 분진 포집, 공장 내 공기 질 기준 이하 달성' },
+  { id: 'p022', year: 2016, client: '○○철강 당진 3공장', industry: '철강', product: '전기로 2기 집진 설비 증설', achievement: '생산량 증대에 따른 집진 용량 확대, 무중단 공사 완료' },
+  { id: 'p023', year: 2015, client: '△△발전 보령 3·4호기', industry: '발전', product: '석탄 보일러 집진 설비 전체 교체', achievement: '환경부 강화 기준 대응, 집진 효율 99.7%→99.95% 향상' },
+  { id: 'p024', year: 2014, client: '□□화학 여수 2공장', industry: '화학', product: '소각로 집진 시스템 신설', achievement: '다이옥신 포함 복합 가스 처리, PTFE 필터 특수 설계 적용' },
+  { id: 'p025', year: 2012, client: '○○시멘트 옥계 공장', industry: '시멘트', product: '대형 역기류 백필터 시스템 (200,000 m³/hr)', achievement: '국내 최대 규모 단일 시스템 자체 설계·납품·시공' }
+];

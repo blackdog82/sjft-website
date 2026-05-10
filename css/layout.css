@@ -1,0 +1,169 @@
+/* ================================================
+   layout.css — 헤더, 푸터, 네비게이션
+   ================================================ */
+
+/* ---- Site Header ---- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(26, 58, 92, 0.97);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: box-shadow var(--transition);
+}
+.site-header.scrolled {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.22);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+/* Logo */
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.site-logo .logo-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--color-accent);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.site-logo .logo-sub {
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.75;
+  display: block;
+  line-height: 1.2;
+}
+
+/* Nav */
+.site-nav { display: flex; align-items: center; gap: 8px; }
+.site-nav a {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background var(--transition), color var(--transition);
+}
+.site-nav a:hover, .site-nav a.active {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+.site-nav .nav-cta {
+  background: var(--color-accent);
+  color: #fff !important;
+  padding: 7px 16px;
+  border-radius: 5px;
+}
+.site-nav .nav-cta:hover { background: var(--color-accent-h) !important; }
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+  cursor: pointer;
+}
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+.menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-toggle.open span:nth-child(2) { opacity: 0; }
+.menu-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Body offset for fixed header */
+body { padding-top: 64px; }
+
+/* ---- Mobile Nav ---- */
+@media (max-width: 767px) {
+  .menu-toggle { display: flex; }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--color-primary);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 16px 16px;
+    gap: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  .site-nav.open { display: flex; }
+  .site-nav a { padding: 11px 16px; font-size: 0.95rem; border-radius: 6px; }
+  .site-nav .nav-cta { text-align: center; margin-top: 6px; }
+}
+
+/* ---- Site Footer ---- */
+.site-footer {
+  background: #111d2b;
+  color: rgba(255,255,255,0.7);
+  padding: 48px 0 28px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 36px;
+}
+
+.footer-brand .site-logo { margin-bottom: 14px; }
+.footer-brand p { font-size: 0.85rem; line-height: 1.8; }
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.footer-col ul li {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+.footer-col ul li a:hover { color: var(--color-accent); }
+.footer-col ul li span { opacity: 0.5; font-size: 0.75rem; margin-right: 4px; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.footer-bottom a { opacity: 0.4; font-size: 0.75rem; }
+.footer-bottom a:hover { opacity: 0.9; }
+
+@media (max-width: 767px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
