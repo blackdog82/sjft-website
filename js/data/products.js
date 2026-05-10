@@ -136,6 +136,23 @@ var PRODUCTS = [
     industries: ['철강', '시멘트', '화학', '발전', '식품', '제지']
   },
   {
+    id: 'mesh-150-01',
+    category: 'mesh',
+    categoryLabel: '메쉬망 필터',
+    name: '메쉬망 150 필터 (Mesh Filter 150)',
+    icon: '🕸️',
+    summary: '자체 생산 라인에서 직접 제작. 폴리에스터 모노필라멘트 원사 사용, 약 100㎛ 미세 입자까지 여과 가능.',
+    specs: {
+      '메쉬 규격': '150 Mesh (약 100㎛ 여과)',
+      '소재': '폴리에스터 모노필라멘트 (Polyester Monofilament)',
+      '특징': '세척 후 반복 사용 가능, 균일한 직조 구조',
+      '생산 방식': '외주 없이 자체 생산 (소재~봉제 마감 직접 품질 관리)',
+      '커스텀': '규격 맞춤 제작 가능',
+      '용도': '식품·화학·도료·집진 전처리·분체 공정'
+    },
+    industries: ['식품', '화학', '도료', '분체', '제약']
+  },
+  {
     id: 'parts-valve-01',
     category: 'parts',
     categoryLabel: 'A/S 부품',
