@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>제품 카탈로그 — 서진필터</title>
-  <meta name="description" content="산업용 백필터 하우징, 필터백(PTFE/Nomex/폴리에스터), 케이지, 집진 시스템 일체형, A/S 부품. 10종 이상 제품 상세 스펙 확인.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%232d8653'/><text y='72' x='50' text-anchor='middle' font-size='46' font-weight='bold' fill='white' font-family='sans-serif'>SF</text></svg>">
+  <title>?쒗뭹 移댄깉濡쒓렇 ???쒖쭊?꾪꽣</title>
+  <meta name="description" content="?곗뾽??諛깊븘???섏슦吏? ?꾪꽣諛?PTFE/Nomex/?대━?먯뒪??, 耳?댁?, 吏묒쭊 ?쒖뒪???쇱껜?? A/S 遺?? 10醫??댁긽 ?쒗뭹 ?곸꽭 ?ㅽ럺 ?뺤씤.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%231a2b4a'/><text y='72' x='50' text-anchor='middle' font-size='46' font-weight='bold' fill='white' font-family='sans-serif'>SF</text></svg>">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/pages/products.css">
@@ -17,16 +17,16 @@
     <div class="header-inner">
       <a href="index.html" class="site-logo">
         <span class="logo-icon">SF</span>
-        <span>서진필터<br><span class="logo-sub">SEOJIN FILTER</span></span>
+        <span>?쒖쭊?꾪꽣<br><span class="logo-sub">SEOJIN FILTER</span></span>
       </a>
-      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+      <button class="menu-toggle" aria-label="硫붾돱 ?닿린" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav class="site-nav">
-        <a href="index.html#about">회사소개</a>
-        <a href="products.html" class="active">제품</a>
-        <a href="portfolio.html">납품실적</a>
-        <a href="inquiry.html" class="nav-cta">견적 문의</a>
+        <a href="index.html#about">?뚯궗?뚭컻</a>
+        <a href="products.html" class="active">?쒗뭹</a>
+        <a href="portfolio.html">?⑺뭹?ㅼ쟻</a>
+        <a href="inquiry.html" class="nav-cta">寃ъ쟻 臾몄쓽</a>
       </nav>
     </div>
   </div>
@@ -34,8 +34,8 @@
 
 <div class="page-hero">
   <div class="container">
-    <h1>제품 카탈로그</h1>
-    <p>산업 환경에 최적화된 집진 솔루션 — 하우징·필터백·케이지·시스템·A/S 부품</p>
+    <h1>?쒗뭹 移댄깉濡쒓렇</h1>
+    <p>?곗뾽 ?섍꼍??理쒖쟻?붾맂 吏묒쭊 ?붾（?????섏슦吏빧룻븘?곕갚쨌耳?댁?쨌?쒖뒪?쑣텮/S 遺??/p>
   </div>
 </div>
 
@@ -43,36 +43,36 @@
   <div class="container">
     <div class="filter-bar">
       <div class="filter-tabs" id="filterTabs">
-        <button class="filter-tab active" data-cat="all">전체</button>
-        <button class="filter-tab" data-cat="bagfilter">백필터</button>
-        <button class="filter-tab" data-cat="cartridge">카트리지필터</button>
-        <button class="filter-tab" data-cat="water">수처리필터</button>
-        <button class="filter-tab" data-cat="parts">집진기 부품</button>
+        <button class="filter-tab active" data-cat="all">?꾩껜</button>
+        <button class="filter-tab" data-cat="bagfilter">諛깊븘??/button>
+        <button class="filter-tab" data-cat="cartridge">移댄듃由ъ??꾪꽣</button>
+        <button class="filter-tab" data-cat="water">?섏쿂由ы븘??/button>
+        <button class="filter-tab" data-cat="parts">吏묒쭊湲?遺??/button>
       </div>
       <div class="search-box">
-        <span>🔍</span>
-        <input type="text" id="searchInput" placeholder="제품명 검색..." aria-label="제품 검색">
+        <span>?뵇</span>
+        <input type="text" id="searchInput" placeholder="?쒗뭹紐?寃??.." aria-label="?쒗뭹 寃??>
       </div>
     </div>
 
     <div class="product-grid" id="productGrid">
-      <!-- JS로 렌더링 -->
+      <!-- JS濡??뚮뜑留?-->
     </div>
   </div>
 </section>
 
-<!-- 제품 상세 모달 -->
+<!-- ?쒗뭹 ?곸꽭 紐⑤떖 -->
 <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal" id="modal">
     <div class="modal-header">
       <h2 id="modalTitle"></h2>
-      <button class="modal-close" id="modalClose" aria-label="닫기">✕</button>
+      <button class="modal-close" id="modalClose" aria-label="?リ린">??/button>
     </div>
     <div class="modal-body" id="modalBody">
     </div>
     <div class="modal-footer">
-      <a href="inquiry.html" class="btn btn-primary btn-sm" id="modalInquiryBtn">이 제품 견적 문의</a>
-      <button class="btn btn-sm" style="border:1.5px solid var(--color-border);color:var(--color-text-sub)" id="modalCloseBtn">닫기</button>
+      <a href="inquiry.html" class="btn btn-primary btn-sm" id="modalInquiryBtn">???쒗뭹 寃ъ쟻 臾몄쓽</a>
+      <button class="btn btn-sm" style="border:1.5px solid var(--color-border);color:var(--color-text-sub)" id="modalCloseBtn">?リ린</button>
     </div>
   </div>
 </div>
@@ -83,32 +83,32 @@
       <div class="footer-brand">
         <a href="index.html" class="site-logo">
           <span class="logo-icon">SF</span>
-          <span>서진필터<br><span class="logo-sub">SEOJIN FILTER</span></span>
+          <span>?쒖쭊?꾪꽣<br><span class="logo-sub">SEOJIN FILTER</span></span>
         </a>
-        <p>20년 경력의 산업용 백필터 전문 제조사.<br>설계·제작·시공·A/S 일괄 지원.</p>
+        <p>20??寃쎈젰???곗뾽??諛깊븘???꾨Ц ?쒖“??<br>?ㅺ퀎쨌?쒖옉쨌?쒓났쨌A/S ?쇨큵 吏??</p>
       </div>
       <div class="footer-col">
-        <h4>바로가기</h4>
+        <h4>諛붾줈媛湲?/h4>
         <ul>
-          <li><a href="index.html#about">회사 소개</a></li>
-          <li><a href="products.html">제품 카탈로그</a></li>
-          <li><a href="portfolio.html">납품 실적</a></li>
-          <li><a href="inquiry.html">견적·문의</a></li>
+          <li><a href="index.html#about">?뚯궗 ?뚭컻</a></li>
+          <li><a href="products.html">?쒗뭹 移댄깉濡쒓렇</a></li>
+          <li><a href="portfolio.html">?⑺뭹 ?ㅼ쟻</a></li>
+          <li><a href="inquiry.html">寃ъ쟻쨌臾몄쓽</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>연락처</h4>
+        <h4>?곕씫泥?/h4>
         <ul>
-          <li><span>📞</span> 031-681-0833</li>
-          <li><span>✉️</span> sjft0935@naver.com</li>
-          <li><span>📍</span> 경기도 부천시 원미구 옥산로 206 4층</li>
-          <li><span>🕐</span> 평일 09:00 ~ 18:00</li>
+          <li><span>?뱸</span> 031-681-0833</li>
+          <li><span>?됵툘</span> sjft0935@naver.com</li>
+          <li><span>?뱧</span> 寃쎄린??遺泥쒖떆 ?먮?援??μ궛濡?206 4痢?/li>
+          <li><span>?븧</span> ?됱씪 09:00 ~ 18:00</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 서진필터 · 대표 최종배 · 사업자등록번호: 130-40-26398</span>
-      <a href="admin/" title="내부 관리">관리</a>
+      <span>짤 2026 ?쒖쭊?꾪꽣 쨌 ???理쒖쥌諛?쨌 ?ъ뾽?먮벑濡앸쾲?? 130-40-26398</span>
+      <a href="admin/" title="?대? 愿由?>愿由?/a>
     </div>
   </div>
 </footer>

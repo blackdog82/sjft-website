@@ -1,0 +1,26 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\spark\\OneDrive\\바탕 화면\\260510\\.claude\\worktrees\\confident-blackwell-fbc3ed"
+publishOrigin = "default"
+base = "C:\\Users\\spark\\OneDrive\\바탕 화면\\260510\\.claude\\worktrees\\confident-blackwell-fbc3ed"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
