@@ -9,7 +9,7 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(15, 27, 46, 0.97);
+  background: rgba(8, 55, 40, 0.97);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   transition: box-shadow var(--transition);
@@ -125,7 +125,7 @@ body { padding-top: 64px; }
 
 /* ---- Site Footer ---- */
 .site-footer {
-  background: #111d2b;
+  background: #071e14;
   color: rgba(255,255,255,0.7);
   padding: 48px 0 28px;
 }

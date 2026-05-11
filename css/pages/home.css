@@ -30,13 +30,13 @@
   position: relative;
   min-height: calc(100vh - 64px);
   background: linear-gradient(-45deg,
-    #0a1628,
-    #0f2341,
-    #132952,
-    #0d3464,
-    #0a1e3a,
-    #1a2b4a,
-    #0a1628
+    #0c4a6e,
+    #0369a1,
+    #0d6b4a,
+    #166534,
+    #0c4a6e,
+    #075985,
+    #0a5c3a
   );
   background-size: 400% 400%;
   animation: gradientFlow 20s ease infinite;
@@ -362,7 +362,7 @@
 
 /* ---- CTA Banner ---- */
 .cta-banner {
-  background: linear-gradient(135deg, #0f1b2e 0%, #1a2b4a 100%);
+  background: linear-gradient(135deg, #084232 0%, #0d6b4a 60%, #0e7490 100%);
   padding: 64px 0;
   text-align: center;
   color: #fff;
