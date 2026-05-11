@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>?⑺뭹 ?ㅼ쟻 ???쒖쭊?꾪꽣</title>
-  <meta name="description" content="?쒖쭊?꾪꽣 ?⑺뭹 ?ㅼ쟻. 泥좉컯쨌?쒕찘?맞룻솕?쇑룸컻?꽷룹떇?댟룹젣吏쨌湲덉냽 ??25嫄??댁긽??二쇱슂 ?⑺뭹 ?щ?.">
+  <title>납품 실적 — 서진필터</title>
+  <meta name="description" content="서진필터 납품 실적. 철강·시멘트·화학·발전·식품·제지·금속 등 25건 이상의 주요 납품 사례.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%231a2b4a'/><text y='72' x='50' text-anchor='middle' font-size='46' font-weight='bold' fill='white' font-family='sans-serif'>SF</text></svg>">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -17,16 +17,16 @@
     <div class="header-inner">
       <a href="index.html" class="site-logo">
         <span class="logo-icon">SF</span>
-        <span>?쒖쭊?꾪꽣<br><span class="logo-sub">SEOJIN FILTER</span></span>
+        <span>서진필터<br><span class="logo-sub">SEOJIN FILTER</span></span>
       </a>
-      <button class="menu-toggle" aria-label="硫붾돱 ?닿린" aria-expanded="false">
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav class="site-nav">
-        <a href="index.html#about">?뚯궗?뚭컻</a>
-        <a href="products.html">?쒗뭹</a>
-        <a href="portfolio.html" class="active">?⑺뭹?ㅼ쟻</a>
-        <a href="inquiry.html" class="nav-cta">寃ъ쟻 臾몄쓽</a>
+        <a href="index.html#about">회사소개</a>
+        <a href="products.html">제품</a>
+        <a href="portfolio.html" class="active">납품실적</a>
+        <a href="inquiry.html" class="nav-cta">견적 문의</a>
       </nav>
     </div>
   </div>
@@ -34,54 +34,54 @@
 
 <div class="page-hero">
   <div class="container">
-    <h1>?⑺뭹 ?ㅼ쟻 쨌 ?ы듃?대━??/h1>
-    <p>2005??李쎈┰ ?대옒 援?궡??二쇱슂 ?곗뾽 ?꾩옣??500嫄??댁긽??吏묒쭊 ?ㅻ퉬瑜??⑺뭹?섏??듬땲??/p>
+    <h1>납품 실적 · 포트폴리오</h1>
+    <p>2005년 창립 이래 국내외 주요 산업 현장에 500건 이상의 집진 설비를 납품하였습니다</p>
   </div>
 </div>
 
 <section class="section">
   <div class="container">
 
-    <!-- ?붿빟 ?듦퀎 -->
+    <!-- 요약 통계 -->
     <div class="port-stats" id="portStats">
       <div class="port-stat">
         <span class="port-stat-num" id="statTotal">0</span>
-        <div class="port-stat-label">珥??⑺뭹 嫄댁닔 (?쒖떆)</div>
+        <div class="port-stat-label">총 납품 건수 (표시)</div>
       </div>
       <div class="port-stat">
         <span class="port-stat-num">7</span>
-        <div class="port-stat-label">?⑺뭹 ?곗뾽 遺꾩빞</div>
+        <div class="port-stat-label">납품 산업 분야</div>
       </div>
       <div class="port-stat">
         <span class="port-stat-num">20</span>
-        <div class="port-stat-label">?⑺뭹 ?곕룄 踰붿쐞 (??</div>
+        <div class="port-stat-label">납품 연도 범위 (년)</div>
       </div>
       <div class="port-stat">
         <span class="port-stat-num">500+</span>
-        <div class="port-stat-label">?꾩쟻 珥??⑺뭹 嫄댁닔</div>
+        <div class="port-stat-label">누적 총 납품 건수</div>
       </div>
     </div>
 
-    <!-- ?꾪꽣 -->
+    <!-- 필터 -->
     <div class="port-filters">
       <div>
-        <label>?곗뾽 遺꾩빞</label>
+        <label>산업 분야</label>
         <div class="port-filter-group" id="industryFilter">
-          <button class="port-filter-btn active" data-ind="all">?꾩껜</button>
-          <button class="port-filter-btn" data-ind="泥좉컯">泥좉컯</button>
-          <button class="port-filter-btn" data-ind="?쒕찘??>?쒕찘??/button>
-          <button class="port-filter-btn" data-ind="?뷀븰">?뷀븰</button>
-          <button class="port-filter-btn" data-ind="諛쒖쟾">諛쒖쟾</button>
-          <button class="port-filter-btn" data-ind="?앺뭹">?앺뭹</button>
-          <button class="port-filter-btn" data-ind="?쒖?">?쒖?</button>
-          <button class="port-filter-btn" data-ind="湲덉냽">湲덉냽</button>
-          <button class="port-filter-btn" data-ind="湲고?">湲고?</button>
+          <button class="port-filter-btn active" data-ind="all">전체</button>
+          <button class="port-filter-btn" data-ind="철강">철강</button>
+          <button class="port-filter-btn" data-ind="시멘트">시멘트</button>
+          <button class="port-filter-btn" data-ind="화학">화학</button>
+          <button class="port-filter-btn" data-ind="발전">발전</button>
+          <button class="port-filter-btn" data-ind="식품">식품</button>
+          <button class="port-filter-btn" data-ind="제지">제지</button>
+          <button class="port-filter-btn" data-ind="금속">금속</button>
+          <button class="port-filter-btn" data-ind="기타">기타</button>
         </div>
       </div>
       <div>
-        <label>?곕룄</label>
+        <label>연도</label>
         <div class="port-filter-group" id="yearFilter">
-          <button class="port-filter-btn active" data-year="all">?꾩껜</button>
+          <button class="port-filter-btn active" data-year="all">전체</button>
           <button class="port-filter-btn" data-year="2022">2022~</button>
           <button class="port-filter-btn" data-year="2018">2018~2021</button>
           <button class="port-filter-btn" data-year="2005">~2017</button>
@@ -89,9 +89,9 @@
       </div>
     </div>
 
-    <!-- 移대뱶 洹몃━??-->
+    <!-- 카드 그리드 -->
     <div class="portfolio-grid" id="portfolioGrid">
-      <!-- JS濡??뚮뜑留?-->
+      <!-- JS로 렌더링 -->
     </div>
 
   </div>
@@ -99,9 +99,9 @@
 
 <section class="cta-banner" style="padding:48px 0">
   <div class="container" style="text-align:center;color:#fff">
-    <h2 style="font-size:1.5rem;margin-bottom:10px">?⑺뭹 ?щ? ?곸꽭 臾몄쓽</h2>
-    <p style="opacity:.82;margin-bottom:22px">?뱀젙 ?곗뾽쨌洹쒕え???⑺뭹 ?щ?媛 沅곴툑?섏떆硫?吏곸젒 臾몄쓽??二쇱꽭??</p>
-    <a href="inquiry.html" class="btn btn-primary">臾몄쓽?섍린</a>
+    <h2 style="font-size:1.5rem;margin-bottom:10px">납품 사례 상세 문의</h2>
+    <p style="opacity:.82;margin-bottom:22px">특정 산업·규모의 납품 사례가 궁금하시면 직접 문의해 주세요.</p>
+    <a href="inquiry.html" class="btn btn-primary">문의하기</a>
   </div>
 </section>
 
@@ -111,32 +111,32 @@
       <div class="footer-brand">
         <a href="index.html" class="site-logo">
           <span class="logo-icon">SF</span>
-          <span>?쒖쭊?꾪꽣<br><span class="logo-sub">SEOJIN FILTER</span></span>
+          <span>서진필터<br><span class="logo-sub">SEOJIN FILTER</span></span>
         </a>
-        <p>20??寃쎈젰???곗뾽??諛깊븘???꾨Ц ?쒖“??<br>?ㅺ퀎쨌?쒖옉쨌?쒓났쨌A/S ?쇨큵 吏??</p>
+        <p>20년 경력의 산업용 백필터 전문 제조사.<br>설계·제작·시공·A/S 일괄 지원.</p>
       </div>
       <div class="footer-col">
-        <h4>諛붾줈媛湲?/h4>
+        <h4>바로가기</h4>
         <ul>
-          <li><a href="index.html#about">?뚯궗 ?뚭컻</a></li>
-          <li><a href="products.html">?쒗뭹 移댄깉濡쒓렇</a></li>
-          <li><a href="portfolio.html">?⑺뭹 ?ㅼ쟻</a></li>
-          <li><a href="inquiry.html">寃ъ쟻쨌臾몄쓽</a></li>
+          <li><a href="index.html#about">회사 소개</a></li>
+          <li><a href="products.html">제품 카탈로그</a></li>
+          <li><a href="portfolio.html">납품 실적</a></li>
+          <li><a href="inquiry.html">견적·문의</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>?곕씫泥?/h4>
+        <h4>연락처</h4>
         <ul>
-          <li><span>?뱸</span> 031-681-0833</li>
-          <li><span>?됵툘</span> sjft0935@naver.com</li>
-          <li><span>?뱧</span> 寃쎄린??遺泥쒖떆 ?먮?援??μ궛濡?206 4痢?/li>
-          <li><span>?븧</span> ?됱씪 09:00 ~ 18:00</li>
+          <li><span>📞</span> 031-681-0833</li>
+          <li><span>✉️</span> sjft0935@naver.com</li>
+          <li><span>📍</span> 경기도 부천시 원미구 옥산로 206 4층</li>
+          <li><span>🕐</span> 평일 09:00 ~ 18:00</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>짤 2026 ?쒖쭊?꾪꽣 쨌 ???理쒖쥌諛?쨌 ?ъ뾽?먮벑濡앸쾲?? 130-40-26398</span>
-      <a href="admin/" title="?대? 愿由?>愿由?/a>
+      <span>© 2026 서진필터 · 대표 최종배 · 사업자등록번호: 130-40-26398</span>
+      <a href="admin/" title="내부 관리">관리</a>
     </div>
   </div>
 </footer>
