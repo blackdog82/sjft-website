@@ -353,14 +353,14 @@
   margin-bottom: 10px;
 }
 .process-title {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 8px;
   line-height: 1.4;
 }
 .process-desc {
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   color: var(--color-text-sub);
   line-height: 1.65;
 }
