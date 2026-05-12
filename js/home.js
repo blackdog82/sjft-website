@@ -72,4 +72,23 @@
 
   window.addEventListener('scroll', runCounters, { passive: true });
   runCounters();
+
+  // 제작과정 순서별 등장 애니메이션
+  var processSteps = document.querySelector('.process-steps');
+  if (processSteps) {
+    var seqObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var steps = entry.target.querySelectorAll('.process-seq');
+          steps.forEach(function (step, i) {
+            setTimeout(function () {
+              step.classList.add('visible');
+            }, i * 220);
+          });
+          seqObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    seqObserver.observe(processSteps);
+  }
 })();

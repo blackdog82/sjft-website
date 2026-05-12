@@ -323,16 +323,7 @@
   margin-top: 48px;
   position: relative;
 }
-.process-steps::before {
-  content: '';
-  position: absolute;
-  top: 52px;
-  left: 10%;
-  right: 10%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--color-accent), #5ba3e8);
-  z-index: 0;
-}
+/* 가로 연결선 삭제 */
 .process-step {
   display: flex;
   flex-direction: column;
@@ -394,9 +385,19 @@
 }
 .process-note strong { color: var(--color-primary); }
 
+/* Process sequential animation */
+.process-seq {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.process-seq.visible {
+  opacity: 1;
+  transform: none;
+}
+
 @media (max-width: 959px) {
   .process-steps { grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .process-steps::before { display: none; }
 }
 @media (max-width: 599px) {
   .process-steps { grid-template-columns: 1fr 1fr; gap: 14px; }
