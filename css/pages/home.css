@@ -64,7 +64,7 @@
 .hero-content { position: relative; z-index: 2; max-width: 700px; }
 .hero-tagline {
   font-size: clamp(1rem, 2.4vw, 1.5rem);
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.06em;
   opacity: 0.88;
   margin-bottom: 44px;
@@ -80,6 +80,7 @@
 }
 .hero-en {
   font-size: clamp(0.95rem, 2vw, 1.3rem);
+  font-weight: 700;
   letter-spacing: 0.12em;
   opacity: 0.72;
   margin-bottom: 44px;
