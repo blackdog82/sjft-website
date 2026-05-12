@@ -151,13 +151,14 @@
 }
 
 /* Lottie Animation */
-.lottie-wrap {
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto 32px;
+.lottie-about-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.lottie-wrap lottie-player {
+.lottie-about-wrap lottie-player {
   width: 100%;
+  max-width: 420px;
   height: auto;
 }
 
