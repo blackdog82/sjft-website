@@ -29,22 +29,12 @@
 .hero {
   position: relative;
   min-height: calc(100vh - 64px);
-  background: linear-gradient(-45deg,
-    #0c4a6e,
-    #0369a1,
-    #0d6b4a,
-    #166534,
-    #0c4a6e,
-    #075985,
-    #0a5c3a
-  );
-  background-size: 400% 400%;
-  animation: gradientFlow 20s ease infinite;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: var(--color-primary);
   padding: 80px 24px 120px;
   overflow: hidden;
 }
@@ -54,7 +44,7 @@
 .hero-particle {
   position: absolute;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(13, 79, 60, 0.12);
   animation: floatUp linear infinite;
 }
 
@@ -73,11 +63,11 @@
 
 .hero-content { position: relative; z-index: 2; max-width: 700px; }
 .hero-tagline {
-  font-size: clamp(0.85rem, 1.8vw, 1.05rem);
+  font-size: clamp(1rem, 2.4vw, 1.5rem);
   font-weight: 500;
   letter-spacing: 0.06em;
   opacity: 0.88;
-  margin-bottom: 18px;
+  margin-bottom: 44px;
   line-height: 1.6;
 }
 .hero-brand {
@@ -85,19 +75,24 @@
   font-weight: 800;
   letter-spacing: 0.18em;
   line-height: 1.1;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   text-shadow: 0 4px 24px rgba(0,0,0,0.3);
 }
 .hero-en {
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
   letter-spacing: 0.12em;
   opacity: 0.72;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: rgba(255,255,255,0.4);
 }
 .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.hero .btn-outline {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.hero .btn-outline:hover { background: rgba(13, 79, 60, 0.08); }
 
 /* ---- Stats ---- */
 .stats {
