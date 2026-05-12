@@ -150,6 +150,17 @@
   font-weight: 600;
 }
 
+/* Lottie Animation */
+.lottie-wrap {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 32px;
+}
+.lottie-wrap lottie-player {
+  width: 100%;
+  height: auto;
+}
+
 /* Timeline */
 .timeline { position: relative; padding-left: 24px; }
 .timeline::before {
