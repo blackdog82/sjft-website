@@ -3,58 +3,112 @@ var PRODUCTS = [
 
   /* ===== 백필터 ===== */
   {
-    id: 'bf-pulse-01',
+    id: 'bf-snapring-01',
     category: 'bagfilter',
     categoryLabel: '백필터',
-    name: '펄스 제트 백필터 (Pulse Jet Bag Filter)',
-    image: 'images/products/bf-pulse.jpg',
-    icon: '🔧',
-    summary: '압축공기 역기류 탈진 방식. 운전 중 연속 탈진 가능하여 가동 중단 불필요.',
+    name: '스냅링 백필터 (SNAP-RING)',
+    image: 'images/products/bf-snapring.jpg',
+    icon: '🔗',
+    summary: '원형 스냅링으로 튜브시트에 간편하게 고정하는 방식. 탈착이 빠르고 밀봉성이 우수해 국내 가장 많이 사용되는 표준형.',
     specs: {
-      '포집 효율': '99.9% 이상',
-      '처리 풍량': '1,000 ~ 100,000 m³/hr',
-      '운전 온도': '상온 ~ 200°C (내열 타입 260°C)',
-      '탈진 방식': 'Pulse Jet (압축공기)',
-      '필터백 재질': 'Polyester, PPS, PTFE, Nomex',
-      '차압 관리': '자동 타이머 / 차압 센서 방식'
+      '고정 방식': '스냅링 (Snap-Ring)',
+      '재질': 'PE·PTFE·NOMEX·PPS 선택',
+      '적용 온도': '상온 ~ 260°C (원단 종류별)',
+      '특징': '교체 작업 신속, 기밀 우수',
+      '규격': '직경·길이 맞춤 제작',
+      '생산': '전 공정 자체 생산'
     },
-    industries: ['철강', '시멘트', '화학', '발전', '제지']
+    industries: ['철강', '시멘트', '화학', '발전', '배터리']
   },
   {
-    id: 'bf-shaker-01',
+    id: 'bf-cord-01',
     category: 'bagfilter',
     categoryLabel: '백필터',
-    name: '쉐이커 백필터 (Shaker Bag Filter)',
-    image: 'images/products/bf-shaker.jpg',
+    name: '끈 백필터 (CORD)',
+    image: 'images/products/bf-cord.jpg',
+    icon: '🪢',
+    summary: '상단을 끈으로 묶어 고정하는 방식. 소형·간이 집진기에 주로 적용되며 구조가 단순하고 비용이 경제적.',
+    specs: {
+      '고정 방식': '끈 결속 (Cord)',
+      '재질': 'PE·Polyester 선택',
+      '적용 온도': '상온 ~ 130°C',
+      '특징': '단순 구조, 낮은 단가, 소형 집진기 적합',
+      '규격': '직경·길이 맞춤 제작',
+      '생산': '전 공정 자체 생산'
+    },
+    industries: ['목재', '식품', '금속', '일반 제조']
+  },
+  {
+    id: 'bf-oring-01',
+    category: 'bagfilter',
+    categoryLabel: '백필터',
+    name: '고무링 백필터 (RUBBER O-RING)',
+    image: 'images/products/bf-oring.jpg',
+    icon: '⭕',
+    summary: '고무 오링으로 튜브시트에 기밀을 유지하며 고정. 진동·충격에 강하고 분진 누설 방지에 효과적.',
+    specs: {
+      '고정 방식': '고무 오링 (Rubber O-Ring)',
+      '재질': 'PE·PTFE·NOMEX 선택',
+      '적용 온도': '상온 ~ 200°C',
+      '특징': '진동 환경 강인, 밀봉성 우수',
+      '규격': '직경·길이 맞춤 제작',
+      '생산': '전 공정 자체 생산'
+    },
+    industries: ['시멘트', '철강', '화학', '반도체']
+  },
+  {
+    id: 'bf-flange-01',
+    category: 'bagfilter',
+    categoryLabel: '백필터',
+    name: '플랜지 백필터 (FLANGE)',
+    image: 'images/products/bf-flange.jpg',
     icon: '🔩',
-    summary: '기계적 진동으로 필터백 탈진. 소용량·저농도 분진에 적합한 경제적 솔루션.',
+    summary: '플랜지 방식으로 고정하는 대형 필터백. 강한 고정력과 안정적인 기밀 유지로 대용량·고압 환경에 적합.',
     specs: {
-      '포집 효율': '99.5% 이상',
-      '처리 풍량': '500 ~ 30,000 m³/hr',
-      '운전 온도': '상온 ~ 120°C',
-      '탈진 방식': '기계적 진동 (Shaker)',
-      '필터백 재질': 'Polyester, Acrylic',
-      '특징': '구조 단순, 유지보수 용이'
+      '고정 방식': '플랜지 (Flange)',
+      '재질': 'PTFE·NOMEX·Fiberglass 선택',
+      '적용 온도': '상온 ~ 300°C',
+      '특징': '대형·고압 환경 적합, 고정력 탁월',
+      '규격': '직경·길이 맞춤 제작',
+      '생산': '전 공정 자체 생산'
     },
-    industries: ['식품', '목재', '금속', '일반 제조']
+    industries: ['발전', '시멘트', '화학', '소각장']
   },
   {
-    id: 'bf-reverse-01',
+    id: 'bf-envelope-01',
     category: 'bagfilter',
     categoryLabel: '백필터',
-    name: '역기류 백필터 (Reverse Air Bag Filter)',
-    image: 'images/products/bf-reverse.jpg',
-    icon: '🏭',
-    summary: '역방향 공기로 탈진. 필터백 손상 최소화, 고온·대용량 집진에 최적.',
+    name: '봉투형 백필터 (ENVELOPE)',
+    image: 'images/products/bf-envelope.jpg',
+    icon: '✉️',
+    summary: '평판 원단을 봉투 형태로 제작하는 특수 필터. 설치 공간이 좁거나 특수한 집진기 구조에 맞춤 제작.',
     specs: {
-      '포집 효율': '99.9% 이상',
-      '처리 풍량': '10,000 ~ 500,000 m³/hr',
-      '운전 온도': '상온 ~ 300°C',
-      '탈진 방식': '역기류 (Reverse Air)',
-      '필터백 재질': 'Fiberglass, PTFE, Nomex',
-      '특징': '대형 발전소·시멘트 킬른 적용'
+      '형태': '평판 봉투형 (Envelope)',
+      '재질': 'PE·PTFE·NOMEX·PPS 선택',
+      '적용 온도': '상온 ~ 260°C (원단 종류별)',
+      '특징': '협소 공간 설치 가능, 다양한 형상 제작',
+      '규격': '도면 기반 맞춤 제작',
+      '생산': '전 공정 자체 생산'
     },
-    industries: ['발전', '시멘트', '철강', '화학']
+    industries: ['식품', '제약', '금속', '목재']
+  },
+  {
+    id: 'bf-etc-01',
+    category: 'bagfilter',
+    categoryLabel: '백필터',
+    name: '기타 특수형 백필터 (ETC)',
+    image: 'images/products/bf-etc.jpg',
+    icon: '🛠️',
+    summary: '위 규격 외 비표준 집진기에 맞춘 특수 형태 필터백. 도면·샘플 기반 맞춤 제작 가능.',
+    specs: {
+      '형태': '비표준 특수형',
+      '재질': 'PE·PP·PTFE·NOMEX·PPS 등 전 재질',
+      '적용 온도': '원단 종류에 따라 상이',
+      '특징': '도면·샘플 제공 시 동일 규격 제작',
+      '규격': '완전 맞춤 제작',
+      '생산': '전 공정 자체 생산'
+    },
+    industries: ['전 산업군']
   },
 
   /* ===== 카트리지필터 ===== */
