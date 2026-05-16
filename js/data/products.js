@@ -111,60 +111,96 @@ var PRODUCTS = [
     industries: ['전 산업군']
   },
 
-  /* ===== 카트리지필터 ===== */
+  /* ===== 원단 종류 ===== */
   {
-    id: 'cf-pleated-01',
-    category: 'cartridge',
-    categoryLabel: '카트리지필터',
-    name: '산업용 플리티드 카트리지 필터',
-    image: 'images/products/cf-pleated.jpg',
-    icon: '🌀',
-    summary: '주름형 여과재로 넓은 여과 면적 확보. 교체 주기 길고 압력 손실 낮음.',
+    id: 'fabric-pe-01',
+    category: 'fabric',
+    categoryLabel: '원단 종류',
+    name: '폴리에스터 (Polyester)',
+    image: 'images/products/fabric-pe.jpg',
+    icon: '🧵',
+    summary: '가장 범용적인 필터 원단. 내산·내알칼리성이 우수하고 경제적인 비용으로 안정적인 여과 성능을 제공합니다.',
     specs: {
-      '여과 정도': '1 ~ 100 μm',
-      '최고 사용 온도': '120°C',
-      '재질': 'Polyester, Cellulose, Spunbond',
-      '규격': '직경 130~325mm, 길이 500~2,000mm (주문 제작)',
-      '표면 처리': '발수·내유·PTFE 코팅 가능',
-      '용도': '분체 집진, 도장 부스, 용접 흄 제거'
+      '소재': 'Polyester (폴리에스터) 니들펀칭 펠트',
+      '사용 온도': '상온 ~ 130°C (연속), 150°C (순간)',
+      '포집 효율': '99.5% 이상',
+      '면밀도': '350 ~ 600 g/m²',
+      '표면 처리': '소결(Singeing), 캘린더링(Calendering) 가능',
+      '특징': '범용성 최고, 가성비 우수, 내산·내알칼리'
     },
-    industries: ['금속', '화학', '도장', '식품', '제약']
+    industries: ['식품', '목재', '금속', '일반 제조', '시멘트']
   },
   {
-    id: 'cf-ptfe-01',
-    category: 'cartridge',
-    categoryLabel: '카트리지필터',
-    name: 'PTFE 카트리지 필터',
-    image: 'images/products/cf-ptfe.jpg',
+    id: 'fabric-pp-01',
+    category: 'fabric',
+    categoryLabel: '원단 종류',
+    name: '폴리프로필렌 (PP)',
+    image: 'images/products/fabric-pp.jpg',
+    icon: '🧪',
+    summary: '강산·강알칼리 환경에서 탁월한 내화학성을 발휘하는 원단. 액상 분진이나 습윤 환경의 집진기에 적합합니다.',
+    specs: {
+      '소재': 'Polypropylene (폴리프로필렌) 니들펀칭 펠트',
+      '사용 온도': '상온 ~ 90°C (연속)',
+      '포집 효율': '99.5% 이상',
+      '면밀도': '350 ~ 550 g/m²',
+      '내화학성': '강산·강알칼리 탁월, 용제 저항성 우수',
+      '특징': '내화학성 최우수, 습윤 환경 적합, 경량'
+    },
+    industries: ['화학', '제약', '식품', '도금', '오수처리']
+  },
+  {
+    id: 'fabric-ptfe-01',
+    category: 'fabric',
+    categoryLabel: '원단 종류',
+    name: 'PTFE (테프론)',
+    image: 'images/products/fabric-ptfe.jpg',
     icon: '⚗️',
-    summary: '내화학성·내열성 최강. 산·알칼리·용제 환경에서도 안정적인 여과 성능.',
+    summary: '내화학성·내열성이 가장 뛰어난 프리미엄 원단. 고온·부식성 가스 환경에서도 99.99% 이상의 포집 효율을 유지합니다.',
     specs: {
-      '여과 정도': '0.5 ~ 10 μm',
-      '최고 사용 온도': '260°C (연속)',
-      '재질': 'PTFE Membrane + PTFE 기포',
-      '내화학성': '산·알칼리·용제 탁월한 내구성',
-      '규격': '주문 제작',
-      '용도': '화학 공장, 반도체, 소각로'
+      '소재': 'PTFE 섬유 + Polyester/Glass 기포',
+      '사용 온도': '상온 ~ 260°C (연속)',
+      '포집 효율': '99.99% 이상',
+      '면밀도': '500 ~ 800 g/m²',
+      '내화학성': '산·알칼리·용제 모든 환경 탁월',
+      '특징': '최고 내열·내화학, 프리미엄 등급, 초장수명'
     },
-    industries: ['화학', '반도체', '제약', '소각']
+    industries: ['화학', '발전', '소각', '반도체', '제약']
   },
   {
-    id: 'cf-nano-01',
-    category: 'cartridge',
-    categoryLabel: '카트리지필터',
-    name: '나노섬유 카트리지 필터',
-    image: 'images/products/cf-nano.jpg',
-    icon: '🔬',
-    summary: '나노 섬유층으로 서브미크론 분진까지 포집. 에너지 절감·장수명 설계.',
+    id: 'fabric-pps-01',
+    category: 'fabric',
+    categoryLabel: '원단 종류',
+    name: 'PPS (폴리페닐렌설파이드)',
+    image: 'images/products/fabric-pps.jpg',
+    icon: '🔥',
+    summary: '160~190°C 고온 환경에서 내열성과 내화학성을 동시에 확보. 석탄 보일러·소각로·시멘트 킬른에 최적화된 원단입니다.',
     specs: {
-      '여과 정도': '0.1 ~ 1 μm',
-      '포집 효율': '99.97% 이상 (H14 등급)',
-      '재질': 'Nanofiber + Polyester 기포',
-      '압력 손실': '기존 대비 30~40% 저감',
-      '규격': '주문 제작',
-      '용도': '정밀 분진 제어, 제약·반도체 클린룸 전처리'
+      '소재': 'PPS (폴리페닐렌설파이드) 니들펀칭 펠트',
+      '사용 온도': '160 ~ 190°C (연속), 200°C (순간)',
+      '포집 효율': '99.5% 이상',
+      '면밀도': '450 ~ 700 g/m²',
+      '내화학성': '산·알칼리·유기용제 내구성 우수',
+      '특징': '고온+내화학 동시 확보, 난연성'
     },
-    industries: ['반도체', '제약', '식품', '화학']
+    industries: ['발전', '소각', '화학', '시멘트', '철강']
+  },
+  {
+    id: 'fabric-nomex-01',
+    category: 'fabric',
+    categoryLabel: '원단 종류',
+    name: 'NOMEX (메타-아라미드)',
+    image: 'images/products/fabric-nomex.jpg',
+    icon: '🌡️',
+    summary: '200°C 이상 고온 연속 운전에 특화된 아라미드 섬유 원단. 철강·시멘트 킬른·아스팔트 플랜트 등 혹독한 고온 환경에 사용됩니다.',
+    specs: {
+      '소재': 'NOMEX (Meta-Aramid) 니들펀칭 펠트',
+      '사용 온도': '200°C (연속), 220°C (순간)',
+      '포집 효율': '99.5% 이상',
+      '면밀도': '500 ~ 750 g/m²',
+      '내열성': '탁월한 고온 치수 안정성, 저열수축',
+      '특징': '고온 특화, 내마모성·인장강도 우수'
+    },
+    industries: ['시멘트', '철강', '유리', '아스팔트', '도자기']
   },
 
   /* ===== 수처리필터 ===== */
