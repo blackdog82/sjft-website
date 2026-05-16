@@ -236,6 +236,130 @@
 
 .products-more { text-align: center; margin-top: 36px; }
 
+/* ---- Main Product Card (백필터 강조) ---- */
+.product-main-card {
+  background: var(--color-surface);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  border-left: 5px solid var(--color-primary);
+  padding: 28px 32px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.product-main-badge {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  letter-spacing: 0.06em;
+}
+.product-main-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+}
+.product-main-text { flex: 1; }
+.product-main-text h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+.product-main-text h3 em {
+  font-style: normal;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text-sub);
+  margin-left: 8px;
+}
+.product-main-text p {
+  font-size: 0.88rem;
+  color: var(--color-text-sub);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.product-spec-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.spec-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  background: #dff0e8;
+  padding: 3px 9px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.spec-tags {
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+  font-weight: 500;
+}
+
+/* ---- Supply Section (납품 지원 품목) ---- */
+.supply-section { margin-top: 8px; }
+.supply-header {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-sub);
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+.supply-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.supply-card {
+  background: var(--color-surface);
+  border-radius: var(--card-radius);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  padding: 16px 18px;
+  border-top: 3px solid var(--color-border);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.supply-card:hover { box-shadow: var(--card-shadow); transform: translateY(-2px); }
+.supply-card h4 {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+  letter-spacing: 0.03em;
+}
+.supply-card h4 em {
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-sub);
+  margin-left: 5px;
+}
+.supply-card p {
+  font-size: 0.8rem;
+  color: var(--color-text-sub);
+  line-height: 1.55;
+}
+
+@media (max-width: 767px) {
+  .product-main-inner { flex-direction: column; }
+  .product-main-inner .btn { align-self: flex-start; }
+}
+@media (max-width: 599px) {
+  .supply-cards { grid-template-columns: 1fr; }
+  .product-main-card { padding: 20px; }
+}
+
 /* ---- Product Banner Bar ---- */
 .product-banner-bar {
   background: var(--color-primary);
