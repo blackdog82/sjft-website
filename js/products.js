@@ -29,8 +29,11 @@
     }
 
     grid.innerHTML = list.map(function (p) {
-      var imgHtml = p.image
-        ? '<img src="' + escHtml(p.image) + '" alt="' + escHtml(p.name) + '" onerror="this.style.display=\'none\'">'
+      var fabricOverlay = (p.category === 'fabric')
+        ? '<div class="fabric-overlay"><div class="fabric-overlay-text">' + escHtml(p.name) + '</div></div>'
+        : '';
+    var imgHtml = p.image
+        ? '<img src="' + escHtml(p.image) + '" alt="' + escHtml(p.name) + '" onerror="this.style.display=\'none\'">' + fabricOverlay
         : '<div class="img-placeholder"><span>' + escHtml(p.categoryLabel) + '</span></div>';
       return '<div class="prod-card">' +
         '<div class="prod-card-img">' + imgHtml + '</div>' +
