@@ -117,7 +117,7 @@ var PRODUCTS = [
     category: 'fabric',
     categoryLabel: '원단 종류',
     name: 'PE(폴리에스터)',
-    image: 'images/products/fabric-pe.jpg',
+    image: 'images/products/fabric-pe.webp',
     icon: '🧵',
     summary: '가장 범용적인 필터 원단. 내산·내알칼리성이 우수하고 경제적인 비용으로 안정적인 여과 성능을 제공합니다.',
     specs: {
@@ -153,7 +153,7 @@ var PRODUCTS = [
     category: 'fabric',
     categoryLabel: '원단 종류',
     name: 'PTFE/Teflon(폴리테트라플루오르에틸렌)',
-    image: 'images/products/fabric-ptfe.jpg',
+    image: 'images/products/fabric-ptfe.webp',
     icon: '⚗️',
     summary: '내화학성·내열성이 가장 뛰어난 프리미엄 원단. 고온·부식성 가스 환경에서도 99.99% 이상의 포집 효율을 유지합니다.',
     specs: {
@@ -171,7 +171,7 @@ var PRODUCTS = [
     category: 'fabric',
     categoryLabel: '원단 종류',
     name: 'PPS/Ryton(폴리페닐렌설파이드)',
-    image: 'images/products/fabric-pps.jpg',
+    image: 'images/products/fabric-pps.webp',
     icon: '🔥',
     summary: '160~190°C 고온 환경에서 내열성과 내화학성을 동시에 확보. 석탄 보일러·소각로·시멘트 킬른에 최적화된 원단입니다.',
     specs: {
@@ -189,7 +189,7 @@ var PRODUCTS = [
     category: 'fabric',
     categoryLabel: '원단 종류',
     name: 'META Aramid/NOMEX(메타-아라미드)',
-    image: 'images/products/fabric-nomex.jpg',
+    image: 'images/products/fabric-nomex.webp',
     icon: '🌡️',
     summary: '200°C 이상 고온 연속 운전에 특화된 아라미드 섬유 원단. 철강·시멘트 킬른·아스팔트 플랜트 등 혹독한 고온 환경에 사용됩니다.',
     specs: {
