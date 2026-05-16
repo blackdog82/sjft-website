@@ -117,7 +117,7 @@ var PRODUCTS = [
     category: 'fabric',
     categoryLabel: '원단 종류',
     name: 'PE(폴리에스터)',
-    image: 'images/products/fabric-pe.webp',
+    image: 'images/products/fabric-pe.jpg',
     icon: '🧵',
     summary: '가장 범용적인 필터 원단. 내산·내알칼리성이 우수하고 경제적인 비용으로 안정적인 여과 성능을 제공합니다.',
     specs: {
@@ -135,7 +135,7 @@ var PRODUCTS = [
     category: 'fabric',
     categoryLabel: '원단 종류',
     name: 'PP(폴리프로필렌)',
-    image: 'images/products/fabric-pp.webp',
+    image: 'images/products/fabric-pp.jpg',
     icon: '🧪',
     summary: '강산·강알칼리 환경에서 탁월한 내화학성을 발휘하는 원단. 액상 분진이나 습윤 환경의 집진기에 적합합니다.',
     specs: {
